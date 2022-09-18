@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .para {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="title m-3 text-center">
+            <h4 class="text-dark p-4 m-0" style="font-size:15px">Enter Your Details</h4>
+        </div>
+        <div class="row1 row p-0 rounded d-block">
+            <div class="col d-flex align-items-center justify-content-around p-0">
+
+                <form name="myForm" class="w-75 shadow p-4 rounded bg-light" id="myP1">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="mb-sm-2">First Name</label>
+                        <input type="text" class="form-control" name="frstName" id="nameInput" placeholder="First Name">
+                    </div>
+                    <p class="para text-danger" id="para1">Please Fill the required field!!!</p>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2" class="mb-sm-2">Last Name</label>
+                        <input type="text" class="form-control" name="lastName" id="nameInput1" placeholder="Last Name">
+                    </div>
+                    <p class="para text-danger" id="para2">Please Fill the required field!!!</p>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2" class="mb-sm-2">Address</label>
+                        <input type="text" class="form-control" name="addRess" id="nameInput2" placeholder="Address">
+                    </div>
+                    <p class="para text-danger" id="para3">Please Fill the required field!!!</p>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2" class="mb-sm-2">Pincode</label>
+                        <input type="number" class="form-control" name="pinCode" id="nameInput3" placeholder="Pincode">
+                    </div>
+                    <p class="para text-danger" id="para4">Please Fill the required field!!!</p>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2" class="mb-sm-2">Gender</label>
+                        <div class="row d-flex align-items-center justify-content-start">
+                            <div class="col-sm-2 ml-4">
+                                <input class="form-check-input" type="radio" id="radioBtn1" name="genVal" value="Male">
+                                <label class="form-check-label" for="exampleRadios1">Male</label>
+                            </div>
+                            <div class="col ml-4">
+                                <input class="form-check-input" type="radio" id="radioBtn2" name="genVal" value="Female">
+                                <label class="form-check-label" for="exampleRadios1">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="para text-danger" name="paragraph" id="para5">Please Fill the required field!!!</p>
+
+                    <div class="form-check form-check-inline">
+                        <label for="formGroupExampleInput2" class="mb-sm-2">Choice of Food</label>
+                    </div>
+                    <div class="row m-0 mb-3 d-flex align-items-center justify-content-between">
+                        <div class="col-sm-2 ml-2">
+                            <input class="form-check-input" type="checkbox" id="food1" name="foodVal" value="Biriyani">
+                            <label class="form-check-label" for="inlineCheckbox1">Biriyani</label>
+                        </div>
+                        <div class="col-sm-2 ml-2">
+                            <input class="form-check-input" type="checkbox" id="food2" name="foodVal" value="Parota">
+                            <label class="form-check-label" for="inlineCheckbox2">Parota</label>
+                        </div>
+                        <div class="col-sm-2 ml-2">
+                            <input class="form-check-input" type="checkbox" id="food3" name="foodVal" value="Chicken">
+                            <label class="form-check-label" for="inlineCheckbox2">Chicken</label>
+                        </div>
+                        <div class="col-sm-2 ml-2">
+                            <input class="form-check-input" type="checkbox" id="food4" name="foodVal" value="Beef">
+                            <label class="form-check-label" for="inlineCheckbox2">Beef</label>
+                        </div>
+                        <div class="col-sm-2 ml-2">
+                            <input class="form-check-input" type="checkbox" id="food5" name="foodVal" value="Ice">
+                            <label class="form-check-label" for="inlineCheckbox2">Ice</label>
+                        </div>
+                    </div>
+                    <p class="para text-danger" name="paragraph" id="para6">Please Fill the required field!!!</p>
+
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2" class="mb-sm-2">State</label>
+                                <select id="state" class="form-control p-2 bg-success text-light" id="exampleFormControlSelect1">
+                        <option  value="">Select</option>
+                        <option  value="TamilNadu">TamilNadu</option>
+                        <option  value="Kerala">Kerala</option>
+                        <option  value="Karnataka">Karnataka</option>
+                        <option  value="Gujarat">Gujarat</option>
+                      </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2" class="mb-sm-2">Country</label>
+
+                                <select id="country" class="form-control p-2 bg-success text-light" id="exampleFormControlSelect1">
+                        <option value="">Select</option>
+                        <option>India</option>
+                        <option>Bangladesh</option>
+                        <option>Afghanistan</option>
+                        <option>Srilanka</option>
+                      </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="para text-danger" name="paragraph" id="para7">Please Fill the both required fields!!!</p>
+                    <input type="button" class="btn col-lg-12 btn-success btn-md my-sm-2" value="SUBMIT" onclick="demoDisplay()"></input>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- // Title for table -->
+
+        <div class="title m-3 text-center">
+            <h4 class="text-dark p-4 m-0" id="text" style="font-size:15px;display:none">Form Details are</h4>
+        </div>
+        <!-- Table -->
+        <div class="row2 row">
+            <div class="col-12 m-0 p-0 border border-secondary" id="myP2" style="display:none;">
+                <table class="table table-striped bg-light">
+                    <thead>
+                        <tr>
+                            <th scope="col">FirstName</th>
+                            <th scope="col">LastName</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Pincode</th>
+                            <th scope="col">gender</th>
+                            <th scope="col">Food</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="frstRow"></td>
+                            <td id="secRow"></td>
+                            <td id="thirRow"></td>
+                            <td id="fourRow"></td>
+                            <td id="fifRow"></td>
+                            <td id="sixRow"></td>
+                            <td id="sevenRow"></td>
+                            <td id="eitRow"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
